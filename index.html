@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food from India's best food delivery app</title>
+    <link rel="stylesheet" href="./style.css">  <!-- stylesheet link, swiggy logo link , faviconlink botstrap link , swiggy font link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="./icons/swiggy.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+<nav class="nav-container">
+    <div class="left">
+        <div class="logo-image">            <!-- Swiggy logo SVG file taken directly from swiggy.com -->
+            <svg class="swiggy-logo" viewBox="0 0 559 825" height="49"width="34" fill="#fc8019">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M542.92 388.542C546.805 366.526 542.355 349.598 530.881 340.76C513.621 327.466 487.698 320.236 425.954 320.236C380.271 320.236 331.225 320.286 310.268 320.275C308.322 319.894 301.285 317.604 301.02 309.112L300.734 174.289C300.727 165.779 307.531 158.857 315.943 158.839C324.369 158.825 331.204 165.723 331.211 174.226C331.211 174.226 331.421 247.414 331.441 273.424C331.441 275.936 332.892 281.8 338.549 283.328C375.43 293.267 561.865 285.999 558.967 251.804C543.147 109.96 424.476 0 280.394 0C235.021 0 192.065 10.9162 154.026 30.2754C62.9934 77.5955 -1.65904 173.107 0.0324268 283.43C1.23215 361.622 52.2203 500.605 83.434 521.234C97.8202 530.749 116.765 527.228 201.484 527.228C239.903 527.228 275.679 527.355 293.26 527.436C295.087 527.782 304.671 530.001 304.671 538.907L304.894 641.393C304.915 649.907 298.104 656.826 289.678 656.829C281.266 656.843 274.434 649.953 274.42 641.446C274.42 641.446 275.17 600.322 275.17 584.985C275.17 581.435 275.424 575.339 265.178 570.727C231.432 555.553 121.849 564.712 115.701 581.457C113.347 587.899 125.599 612.801 144.459 644.731C170.102 685.624 211.889 747.245 245.601 792.625C261.047 813.417 268.77 823.813 280.467 824.101C292.165 824.389 300.514 814.236 317.213 793.928C383.012 713.909 516.552 537.663 542.92 388.542Z" fill="url(#paint0_linear_19447_66107)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_19447_66107" x1="445.629"y1="63.8626"x2="160.773" y2="537.598" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF993A"></stop>
+                      <stop offset="1" stop-color="#F15700"></stop>
+                    </linearGradient>
+                  </defs>
+            </svg>
+        </div>
+        <div class="location">
+            <a href="#"><b>HOME</b></a>
+            <span>Bangalore, Karnataka</span>
+            <img src="./icons/dropdown.png" alt="dropdown">
+        </div>
+    </div>
+    <div class="nav-menu">
+        <span><img id="menu-button" src="./icons/menu.png" alt=""></span>
+    </div>
+    <div class="right" id ="right">
+        <div class="nav-icons">
+            <button>
+                <img src="./icons/darkmode.png" alt="nav-icons" style="width:15px; height: 15px;" id="nav-dark-icon">
+                <span class="dark">Dark</span>
+            </button>
+            
+        </div>
+        <div class="nav-icons">
+            <img src="./icons/search.png" alt="nav-icons" id="nav-search-icon">
+            <span class="search">Search</span>
+        </div>
+        <div class="nav-icons">
+            <img src="./icons/discount.png" alt="nav-icons" id="nav-offer-icon">
+            <span class="offers">Offers
+                <sup style="font-size: 10px; font-weight: 600; color: #ffa700;">NEW</sup>
+            </span>
+        </div>
+        <div class="nav-icons">
+            <img src="./icons/help.png" alt="nav-icons" id="nav-help-icon">
+            <span class="help">Help</span>
+        </div>
+        <div class="nav-icons">
+            <img src="./icons/user.png" alt="nav-icons" id="nav-user-icon">
+            <span class="profile">Profile</span>
+        </div>
+        <div class="nav-icons">
+            <img src="./icons/cart.png" alt="nav-icons" style=" width:25px; height: 25px;" id="nav-cart-icon">
+            <span class="cart">Cart</span>
+        </div>
+    </div>
+    
+</nav>
+
+<div class="main">
+    <div class="carousel-container">
+        <div class="carousel slide" id="top-Carousel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ef3i0k1ilhdsistcykog" alt="First slide">
+                <img  class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lyn9at38gjithnogzfui" alt="First slide">
+                <img  class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jmeoz6zu9fi0h9tw7xrb" alt="First slide">
+                <img  class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" alt="First slide">
+                    
+              </div>
+              <div class="carousel-item">
+                <img class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jmeoz6zu9fi0h9tw7xrb" alt="Second slide">
+                <img class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" alt="Second slide">
+                <img class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/oxe97jexxbnxqtbhg2zo" alt="Second slide">
+                <img class="banners" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3" alt="">
+            </div> 
+            </div>
+            <a class="carousel-control-prev" href="#top-Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#top-Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+    </div>
+    
+    <div class="filters-container">
+        <div class="heading-filter">1429 restaurants</div>
+        <div class="filters">
+        <div class="filter"><a href="">Relevance</a> </div>
+        <div class="filter">Delivery Time</div>
+        <div class="filter">Rating</div>
+        <div class="filter">Cost: Low to High</div>
+        <div class="filter">Cost: High to Low</div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="grid-container">
+    <div class="grid-element" id="promoted">
+        <img class="element"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cd832b6167eb9f88aeb1ccdebf38d942" alt="">
+        <div class="element-head">Truffles</div>
+        <div class="element-body">American, Desserts, Continental, Italian</div>
+        <div class="element-ratings">
+            <div class="ratings">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">4.4</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>40 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹450 for two</span></li>
+                </ul>
+                
+            </div>
+
+        </div>
+        <div class="element-discount">
+            <span >
+                <img src="./icons/discountdark.png" class="icon-discount"alt="">
+            </span>
+            <span class="discount-text">
+                60% off | Use TRYNEW
+            </span>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>    
+    </div>
+    
+    <div class="grid-element">
+        <img class="element" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qltgnkyywuo5gmnpqzbm" alt="">
+        <div class="element-head">Hotel Empire</div>
+        <div class="element-body">North Indian, Kebabs, Biryani</div>
+        <div class="element-ratings">
+            <div class="ratings">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">4.3</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>33 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹450 for two</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="element-discount">
+            <span >
+                <img src="./icons/discountdark.png" class="icon-discount"alt="">
+            </span>
+            <span class="discount-text">
+                10% off | Use PARTY
+            </span>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+
+    <div class="grid-element">
+        <img class="element"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1" alt="">
+        <div class="element-head">La Pino's Pizza</div>
+        <div class="element-body">Pizzas</div>
+        <div class="element-ratings">
+            <div class="ratings" style="background-color: #db7c38;">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">3.8</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>20 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹250 for two</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+
+    <div class="grid-element" id="promoted">
+        <img class="element"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl" alt="">
+        <div class="element-head">Burger king</div>
+        <div class="element-body">Burgers, American</div>
+        <div class="element-ratings">
+            <div class="ratings">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">4.1</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>37 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹350 for two</span></li>
+                </ul>
+                
+            </div>
+
+        </div>
+        <div class="element-discount">
+            <span >
+                <img src="./icons/discountdark.png" class="icon-discount"alt="">
+            </span>
+            <span class="discount-text">
+                60% off | Use TRYNEW
+            </span>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+
+    <div class="grid-element">
+        <img class="element"src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mpnblqqkh7xpi4h0fnju" alt="">
+        <div class="element-head">Daily Sushi</div>
+        <div class="element-body">Japanese, Asian, Korean</div>
+        <div class="element-ratings">
+            <div class="ratings">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">4.7</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>31 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹800 for two</span></li>
+                </ul>
+                
+            </div>
+
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+
+    <div class="grid-element">
+        <img class="element" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qjmt9lvjewoebq4aumh0" alt="">
+        <div class="element-head">13th Floor</div>
+        <div class="element-body">North Indian, Thai</div>
+        <div class="element-ratings">
+            <div class="ratings">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">4.3</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>33 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹450 for two</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="element-discount">
+            <span >
+                <img src="./icons/discountdark.png" class="icon-discount"alt="">
+            </span>
+            <span class="discount-text">
+                50% off | Use WELCOMEBACK
+            </span>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+
+    <div class="grid-element" id="promoted">
+        <img class="element" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jk29op4aihugdpb0owmk" alt="">
+        <div class="element-head">Trippy Goat Cafe & Wine</div>
+        <div class="element-body">Beverages, Continental, Italian</div>
+        <div class="element-ratings">
+            <div class="ratings" style="background-color: #db7c38;">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">3.9</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>37 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹1500 for two</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+        
+    </div>
+
+    <div class="grid-element">
+        <img class="element" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/foppafpqydgyzcwrufgk" alt="">
+        <div class="element-head">ITC Hotels</div>
+        <div class="element-body">Biryani, North Indian, Desserts</div>
+        <div class="element-ratings">
+            <div class="ratings" style="background-color: #db7c38;">
+                <span><img class="star" src="./icons/starwhite.png" alt=""></span>
+                <span class="number">3.8</span>
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>33 MINS</span></li>
+                </ul>
+                
+            </div>
+            <div class="r-text">
+                <ul>
+                    <li><span>₹450 for two</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="element-discount">
+            <span >
+                <img src="./icons/discountdark.png" class="icon-discount"alt="">
+            </span>
+            <span class="discount-text">
+                Flat ₹150 off on orders above ₹1199
+            </span>
+        </div>
+        <div class="quick-view">
+            <span>QUICK VIEW</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-cols">
+        COMPANY
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">About us</a></li>
+          <li class="footer-li"><a href="#">Team</a></li>
+          <li class="footer-li"><a href="#">Careers</a></li>
+          <li class="footer-li"><a href="#">Swiggy Blog</a></li>
+          <li class="footer-li"><a href="#">Bug Bounty</a></li>
+          <li class="footer-li"><a href="#">Swiggy Super</a></li>
+          <li class="footer-li"><a href="#">Swiggy Corporate</a></li>
+          <li class="footer-li"><a href="#">Swiggy Instamart</a></li>
+        </ul>
+      </div>
+      <div class="footer-cols">
+        CONTACT
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">Help & Support</a></li>
+          <li class="footer-li"><a href="#">Partner with us</a></li>
+          <li class="footer-li"><a href="#">Ride with us</a></li>
+        </ul>
+      </div>
+      <div class="footer-cols">
+        LEGAL
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-li"><a href="#">Refund & Cancellation</a></li>
+          <li class="footer-li"><a href="#">Privacy Policy</a></li>
+          <li class="footer-li"><a href="#">Cookie Policy</a></li>
+          <li class="footer-li"><a href="#">Offer Terms</a></li>
+          <li class="footer-li"><a href="#">Phishing & Fraud</a></li>
+          <li class="footer-li"><a href="#">Corporate – Swiggy Money Codes Terms and Conditions</a></li>
+          <li class="footer-li"><a href="#">Corporate - Swiggy Discount Voucher Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-imgs">
+        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"/>
+        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"/>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+
+<script src="./script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
