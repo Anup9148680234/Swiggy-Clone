@@ -10,7 +10,8 @@ Resposive Design, Collapsing Menu with on hover Display
 Bootstrap is required for the Carousel, which takes too much code lines if we exclude Bootstrap and 
 make with Pure CSS, JS
 
-Dark and Light Mode can be swapped by a center `Dark` Button - only for Website View
++Extra Feature
+Dark and Light Mode can be swapped by a center `Dark` Button
 
 ___
 
