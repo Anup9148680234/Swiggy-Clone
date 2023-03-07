@@ -11,7 +11,7 @@ Bootstrap is required for the Carousel, which takes too much code lines if we ex
 make with Pure CSS, JS
 
 +Extra Feature
-Dark and Light Mode can be swapped by a centeral `Dark` Button
+Dark and Light Mode can be swapped by a central `Dark` Button
 
 ___
 
